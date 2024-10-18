@@ -103,13 +103,53 @@ main .container .row {
 
 main .container .col-sessanta {
   text-align: center;
-  padding: 80px; /*debug*/
+  padding: 80px;
+  /*debug*/
   width: 60%;
 }
 
 
 main .container .col-quaranta {
   text-align: center;
-  padding: 80px; /*debug*/
+  padding: 80px;
+  /*debug*/
   width: 40%;
+}
+
+main .container .row-tech {
+  text-align: center;
+}
+
+main .container .row-tech .testo,
+.img {
+  padding: 80px;
+  align-content: center;
+}
+
+main .container .row-tech .testo-cta {
+  align-content: center;
+  padding: 20px;
+  max-width: 100%;
+}
+
+main .container .row-cta {
+  max-width: 100%;
+  display: flex;
+  text-align: center;
+}
+
+main .container .row-cta .col-cta {
+  width: 60%;
+  padding: 40px;
+}
+
+main .container .row-cta .col-cta a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+main .container .row-cta .col-left,.col-right {
+  width: 20%;
+  padding: 40px;
 }
