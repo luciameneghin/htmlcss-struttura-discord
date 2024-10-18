@@ -59,11 +59,21 @@ header .container .col nav ul li a {
   padding: 10px;
 }
 
-header .container .text-box {
+header .container .row-text-box {
   margin-top: 80px;
-  padding: 50px;
-  /*debug*/
+  display: flex;
+  max-width: 100%;
   text-align: center;
+}
+
+header .container .row-text-box .col-text-box {
+  padding: 40px;
+  width: 50%;
+}
+
+header .container .row-text-box .col-empty-box {
+  padding: 40px;
+  width: 25%;
 }
 
 header .container .row-buttons {
@@ -98,7 +108,7 @@ main .container .row {
   min-height: 180px;
   max-width: 100%;
   display: flex;
-  padding-bottom: 380px;
+  padding-bottom: 160px;
 }
 
 main .container .col-sessanta {
@@ -136,10 +146,11 @@ main .container .row-cta {
   max-width: 100%;
   display: flex;
   text-align: center;
+  margin-bottom: 120px;
 }
 
 main .container .row-cta .col-cta {
-  width: 60%;
+  width: 40%;
   padding: 40px;
 }
 
@@ -149,7 +160,54 @@ main .container .row-cta .col-cta a {
   text-align: center;
 }
 
-main .container .row-cta .col-left,.col-right {
+main .container .row-cta .col-left,
+.col-right {
   width: 20%;
   padding: 40px;
+}
+
+/* FINE MAIN */
+/* INIZIO FOOTER */
+
+footer .container .row-foot-info {
+  display: flex;
+  max-width: 100%;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+
+footer .container .row-foot-info .col-foot {
+  width: 20%;
+  height: 200px; /*debug*/
+  padding: 40px;
+}
+
+footer .container .row-foot-reg {
+  display: flex;
+  max-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+footer .row-foot-reg .col-foot-logo {
+  padding: 40px;
+  width: 10%;
+}
+
+footer .row-foot-reg .col-foot-center {
+  padding: 40px;
+  width: 80%;
+}
+
+footer .row-foot-reg .col-foot-reg {
+  padding: 40px;
+  width: 10%;
+}
+
+footer .row-foot-reg .col-foot-reg a {
+  padding: 40px;
+  text-decoration: none;
+  color: black;
 }
