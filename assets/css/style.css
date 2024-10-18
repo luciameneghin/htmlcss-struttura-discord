@@ -5,44 +5,47 @@
 }
 
 /* DEBUG */
+
 .debug {
   background-color: rgba(255, 0, 0, .2);
   border: 1px solid black;
 }
 
 /* FINE DEBUG */
+/* inizio header */
 
-header {
+header main footer {
   min-height: 80px;
   max-width: 98%;
 }
 
-header .container {
+
+.container {
   max-width: 70%;
   min-height: 80px;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-.row {
+header .container .row {
   display: flex;
   min-height: 80px;
   justify-content: space-between;
   align-items: center;
 }
 
-header .container .col {
+.col {
   flex-wrap: wrap;
   line-height: 65px;
 }
 
-.navbar {
+header .container .row ul .navbar {
   list-style: none;
   display: inline-block;
   padding: 10px;
 }
 
-.row a {
+header .row a {
   text-decoration: none;
   color: black;
   padding: 10px;
@@ -59,17 +62,54 @@ header .container .col nav ul li a {
 header .container .text-box {
   margin-top: 80px;
   padding: 50px;
-  flex-direction: row-reverse;
+  /*debug*/
   text-align: center;
 }
 
-header .container .row {
+header .container .row-buttons {
   display: flex;
   justify-content: center;
+  margin-bottom: 160px;
 }
 
-header .container .row .buttons {
-  list-style: none;
+header .container .row-buttons a {
+  color: black;
+  display: flex;
+  padding: 10px;
+}
+
+header .container .row-buttons .buttons {
   display: inline-block;
   padding: 10px;
+}
+
+header .container .row-buttons a {
+  text-decoration: none;
+}
+
+/* fine header */
+/* inizio main */
+
+main .container {
+  padding-top: 160px;
+}
+
+main .container .row {
+  min-height: 180px;
+  max-width: 100%;
+  display: flex;
+  padding-bottom: 380px;
+}
+
+main .container .col-sessanta {
+  text-align: center;
+  padding: 80px; /*debug*/
+  width: 60%;
+}
+
+
+main .container .col-quaranta {
+  text-align: center;
+  padding: 80px; /*debug*/
+  width: 40%;
 }
